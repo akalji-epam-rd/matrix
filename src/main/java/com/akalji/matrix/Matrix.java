@@ -5,6 +5,7 @@ import com.akalji.matrix.exceptions.IncompatibleDimensions;
 import java.util.Scanner;
 
 /**
+ * @author Nikolai Tikhonov <akalji@ya.ru> akalji
  *  Yet another class of matrix
  */
 public class Matrix {
@@ -12,9 +13,11 @@ public class Matrix {
     private double M[][];
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * Constructor of any dimension Matrix
      * @param vsize - number of rows
      * @param hsize - number of columns
+     * @author akalji (Nikolai Tikhonov)
      */
     public Matrix(int vsize, int hsize) {
         this.vsize = vsize;
@@ -29,6 +32,7 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * A copy constructor of the Matrix
      * @param A - The copied matrix
      */
@@ -45,10 +49,11 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * Enter the matrix through the scanner
      * first line is size of square matrix
      *
-     * @param in - Scanner object
+     * @param in - Scanner object     *
      */
     public Matrix(Scanner in) {
         this.hsize = this.vsize = Integer.parseInt(in.next());
@@ -61,6 +66,7 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * Constructor of square matrix
      * @param N
      */
@@ -77,10 +83,12 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * Setter of value into cell of matrix
      * @param i - row
      * @param j - column
      * @param value
+     * @author akalji (Nikolai Tikhonov)
      */
     public void set(int i, int j, double value) {
         if (i <= vsize && j <= hsize) {
@@ -92,7 +100,7 @@ public class Matrix {
     }
 
     /**
-     *
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * @return - number of rows
      */
     public int getVsize() {
@@ -100,7 +108,7 @@ public class Matrix {
     }
 
     /**
-     *
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * @return - number of columns
      */
     public int getHsize() {
@@ -108,7 +116,7 @@ public class Matrix {
     }
 
     /**
-     *
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * @param i - row
      * @param j - column
      * @return - value of cell
@@ -118,6 +126,7 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * Swap elements in rows a & b
      * @param a
      * @param b
@@ -130,6 +139,7 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * Swap elements in columns a & b
      * @param a
      * @param b
@@ -151,6 +161,7 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * Set 0.0 in all elements of the matrix
      */
     public void clear() {
@@ -160,6 +171,7 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * Insert value in diagonal
      * @param value
      */
@@ -171,6 +183,7 @@ public class Matrix {
     }
 
     /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      *
      * @return
      */
@@ -188,7 +201,7 @@ public class Matrix {
     }
 
     /**
-     *
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      */
     public void diagonalize() {
         for (int i = 0; i < vsize; i++) {
@@ -205,7 +218,7 @@ public class Matrix {
     }
 
     /**
-     *
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * @param M
      * @return Transposed Matrix M
      */
@@ -220,7 +233,7 @@ public class Matrix {
     }
 
     /**
-     *
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * @param A
      * @param B
      * @return A+B
@@ -241,7 +254,7 @@ public class Matrix {
     }
 
     /**
-     *
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * @param A
      * @param B
      * @return A-B
@@ -262,7 +275,7 @@ public class Matrix {
     }
 
     /**
-     *
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
      * @param A
      * @param B
      * @return A*B
