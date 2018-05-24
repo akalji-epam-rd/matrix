@@ -4,6 +4,7 @@ Example of my code style
 # How to use with maven
 Add sections:
 
+```xml
 <repository>
     <id>jitpack.io</id>
     <url>https://jitpack.io</url>
@@ -14,3 +15,4 @@ Add sections:
     <artifactId>matrix</artifactId>
     <version>master</version>
 </dependency>
+```
