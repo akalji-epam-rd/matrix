@@ -297,6 +297,32 @@ public class Matrix {
         return C;
     }
 
+    /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
+     *
+     */
+    public void shiftUp(){
+        double tmp[] = new double[hsize];
+        System.arraycopy (M[0], 0, tmp, 0, hsize);
+        for (int i = 1; i < vsize; i++) {
+            M[i-1]=M[i];
+        }
+        M[hsize-1]=tmp;
+    }
+
+    /**
+     * @author Nikolai Tikhonov <akalji@ya.ru> akalji
+     *
+     */
+    public void shiftDown(){
+        double tmp[] = new double[hsize];
+        System.arraycopy (M[hsize-1], 0, tmp, 0, hsize);
+        for (int i = hsize-1; i > 0 ; i--) {
+            M[i]=M[i-1];
+        }
+        M[0]=tmp;
+    }
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
